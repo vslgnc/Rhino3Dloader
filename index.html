@@ -1,0 +1,43 @@
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>template</title>
+
+  <meta name="description" content="">
+
+
+  <link rel="stylesheet" href="../../css/stylesheet.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body onload="start()">
+
+
+
+  <div class="canvas" id="canvas" id="slide_content">
+      <option for="file-select" id="file-select" value="./3D_projet.3dm"></option>
+          <script type="importmap">
+              {
+                  "imports": {
+                      "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+                      "three/examples/jsm/controls/OrbitControls": "https://unpkg.com/three@0.158.0/examples/jsm/controls/OrbitControls.js",
+                      "three/examples/jsm/loaders/3DMLoader": "https://unpkg.com/three@0.158.0/examples/jsm/loaders/3DMLoader.js"                }
+              }
+          </script>
+          
+          <script type="module" src="../../js/3Dviewer.js"></script>
+    
+  </div>
+  
+
+  <footer>
+  </footer>
+
+
+</body>
+</html>
